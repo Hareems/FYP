@@ -1,0 +1,175 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#EFEFEF"
+    >
+    <TextView
+        android:id="@+id/first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="First Name"
+        android:textSize="15sp"
+        android:textStyle="italic"
+      
+         />
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_below="@+id/first_name"
+        android:layout_marginTop="1dp"
+        android:background="@drawable/round_corners_textview"
+        android:ems="10"
+        android:hint="  Abcd"
+        android:paddingLeft="5dp"
+        android:textColorHint="#9CA4A8"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstname"
+        android:layout_marginTop="16dp"
+        android:text="Last Name"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_below="@+id/last_name"
+        android:background="@drawable/round_corners_textview"
+        android:ems="10"
+        android:hint="  Defg  "
+        android:paddingLeft="5dp"
+        android:textColorHint="#9CA4A8"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lastname"
+        android:layout_marginTop="16dp"
+        android:text="User Name"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_below="@+id/user_name"
+        android:background="@drawable/round_corners_textview"
+        android:ems="10"
+        android:hint="  ufgh_1254"
+        android:textSize="15sp"
+        android:textColorHint="#9CA4A8"
+        android:paddingLeft="5dp" />
+
+    <TextView
+        android:id="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:layout_marginTop="16dp"
+        android:text="Password"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/pass_word"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_below="@+id/password"
+        android:background="@drawable/round_corners_textview"
+        android:ems="10"
+        android:hint="********  "
+        android:inputType="textPassword"
+        android:textSize="15sp"
+        android:textColorHint="#9CA4A8"
+        android:paddingLeft="10dp" />
+
+     <TextView
+         android:id="@+id/confirm_password"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_below="@+id/pass_word"
+         android:layout_marginTop="16dp"
+         android:text=" Confirm Password"
+         android:textSize="15sp"
+         android:textStyle="italic" />
+
+    <EditText
+        android:id="@+id/confirmpassword"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_below="@+id/confirm_password"
+        android:background="@drawable/round_corners_textview"
+        android:ems="10"
+        android:hint="********  "
+        android:textSize="15sp"
+        android:inputType="textPassword"
+        android:paddingLeft="10dp"
+        android:textColorHint="#9CA4A8" />
+
+    <LinearLayout
+        android:id="@+id/radiobuttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confirmpassword"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/student"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="Student"
+            android:textSize="15sp"
+            android:textStyle="italic" />
+
+        <RadioButton
+            android:id="@+id/quari"
+            android:layout_width="wrap_content"
+            android:layout_height="28dp"
+            android:text="Quari"
+            android:textSize="15sp"
+            android:textStyle="italic" 
+            android:layout_marginLeft="90dp"/>
+
+    </LinearLayout>
+   <Button
+        android:id="@+id/register"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@+id/radiobuttons"
+        android:layout_marginTop="4dp"
+        android:background="@drawable/button_style"
+        android:shadowColor="#f9f9f9"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="Register"
+        android:textColor="#52595C" />
+   <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register"
+        android:layout_marginTop="2dp"
+        android:gravity="center"
+        android:text="Already have account?"
+        android:textColor="#0A4C6E"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+</RelativeLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+ 
+    <!--  Surah name Label -->
+    <TextView
+        android:id="@+id/surah_name"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dip"
+        android:paddingLeft="15dip"
+        android:paddingBottom="4dip"
+        android:textSize="20sp"
+        android:textStyle="bold" 
+        android:text="Surah Al-Fatiha"
+       
+        />
+     <TextView
+        android:id="@+id/verses_range_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/surah_name"
+        android:paddingBottom="6dip"
+        android:paddingLeft="17dip"
+        android:text="Verses:"
+        android:textSize="15sp"
+       
+         />
+  <TextView
+        android:id="@+id/verses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/surah_name"
+        android:paddingBottom="6dip"
+        android:paddingLeft="10dp"
+        android:text="15"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/verses_range_title"
+       
+         />
+  <TextView
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/surah_name"
+        android:paddingBottom="6dip"
+        android:paddingLeft="8dip"
+        android:text="to"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/verses"
+       
+         />
+    <TextView
+        android:id="@+id/till_verses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/surah_name"
+        android:paddingBottom="6dip"
+        android:paddingLeft="8dip"
+        android:text="20"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/to"
+       
+         />
+</RelativeLayout>

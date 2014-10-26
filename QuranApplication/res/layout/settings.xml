@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFEF"
+    android:orientation="vertical"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp" >
+
+ <!--     <LinearLayout
+        android:id="@+id/surah_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/button_style"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/select_surah"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:text="Select Surah"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <Spinner
+            android:id="@+id/surah"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="20dp"
+            android:textSize="4sp" />
+    </LinearLayout>
+-->
+    <TextView
+        android:id="@+id/select_verses"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Select Verses"
+        android:textSize="20sp"
+        android:textStyle="" />
+
+    <LinearLayout
+        android:id="@+id/verses_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button_style"
+         android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/verses_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:text="From:"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <Spinner
+            android:id="@+id/from"
+           android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/verses_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="To:"
+            android:textStyle="italic"  android:layout_marginLeft="10dp" />
+
+        <Spinner
+            android:id="@+id/to"
+             android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"  />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/select_repetation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Select Repetation"
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+
+
+        <Spinner
+            android:id="@+id/repeat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              android:layout_marginTop="15dp"
+            android:textSize="4sp"
+               android:background="@drawable/button_style"  />
+ 
+
+    <TextView
+        android:id="@+id/select_receiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="30dp"
+        android:text="Select Receiter   "
+        android:textSize="20sp"
+        android:textStyle="italic" />
+
+ 
+        <Spinner
+            android:id="@+id/receiter"
+           android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+              android:layout_marginTop="15dp"
+            android:textSize="4sp"
+                 android:background="@drawable/button_style" />
+  
+
+    <!-- Spinner Element -->
+
+         <Button
+        android:id="@+id/done"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/receiter"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_style"
+        android:shadowColor="#f9f9f9"
+        android:shadowDx="1"
+        android:shadowDy="1"
+        android:shadowRadius="1"
+        android:text="Done"
+                    android:textSize="20sp"
+        android:textColor="#52595C" />
+
+</LinearLayout>

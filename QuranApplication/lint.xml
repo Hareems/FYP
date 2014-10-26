@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/aayat_image.xml" />
+        <ignore path="res/layout/profile.xml" />
+        <ignore path="res/layout/recording.xml" />
+        <ignore path="res/layout/testprofile.xml" />
+    </issue>
+    <issue id="ExtraText">
+        <ignore path="res/layout/inbox_list.xml" />
+        <ignore path="res/layout/juzz_list.xml" />
+        <ignore path="res/layout/outbox_list.xml" />
+        <ignore path="res/layout/quari_list.xml" />
+        <ignore path="res/layout/receiter_list.xml" />
+        <ignore path="res/layout/surah_list.xml" />
+    </issue>
+    <issue id="HardcodedText">
+        <ignore path="res/layout/aayat_image.xml" />
+        <ignore path="res/layout/about.xml" />
+        <ignore path="res/layout/bookmark_list.xml" />
+        <ignore path="res/layout/compose_message.xml" />
+        <ignore path="res/layout/dashboard_fragment_layout.xml" />
+        <ignore path="res/layout/edit_profile.xml" />
+        <ignore path="res/layout/forget_password.xml" />
+        <ignore path="res/layout/login.xml" />
+        <ignore path="res/layout/notification.xml" />
+        <ignore path="res/layout/passwordsetting.xml" />
+        <ignore path="res/layout/profile.xml" />
+        <ignore path="res/layout/recording.xml" />
+        <ignore path="res/layout/registeration.xml" />
+        <ignore path="res/layout/search_results.xml" />
+        <ignore path="res/layout/settings.xml" />
+        <ignore path="res/layout/testprofile.xml" />
+    </issue>
+    <issue id="InefficientWeight">
+        <ignore path="res/layout/aayat_image.xml" />
+    </issue>
+    <issue id="ObsoleteLayoutParam">
+        <ignore path="res/layout/aayat_image.xml" />
+        <ignore path="res/layout/forget_password.xml" />
+        <ignore path="res/layout/passwordsetting.xml" />
+        <ignore path="res/layout/settings.xml" />
+    </issue>
+    <issue id="ScrollViewSize">
+        <ignore path="res/layout/compose_message.xml" />
+    </issue>
+    <issue id="SmallSp">
+        <ignore path="res/layout/settings.xml" />
+    </issue>
+    <issue id="SpUsage">
+        <ignore path="res/layout/inbox_list.xml" />
+        <ignore path="res/layout/juzz_list.xml" />
+        <ignore path="res/layout/outbox_list.xml" />
+        <ignore path="res/layout/quari_list.xml" />
+        <ignore path="res/layout/receiter_list.xml" />
+        <ignore path="res/layout/surah_list.xml" />
+    </issue>
+    <issue id="UselessParent">
+        <ignore path="res/layout/aayat_image.xml" />
+    </issue>
+</lint>

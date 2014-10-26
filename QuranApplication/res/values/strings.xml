@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">QuranApplication</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="wrong_email">Email id is not valid.</string>
+    <string name="fieldError">This field is required.</string>
+    
+</resources>

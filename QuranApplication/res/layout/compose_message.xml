@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+     android:background="#EFEFEF">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:background="#EFEFEF" >
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="To" 
+        />
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject" />
+      <EditText
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="222dp"
+            android:gravity="top"
+            android:hint="Message" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="5dp"
+          android:orientation="horizontal" >
+
+          <Button
+              android:id="@+id/attachment"
+              style="?android:attr/buttonStyleSmall"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/button_style"
+              android:drawableLeft="@drawable/ic_action_attachment"
+              android:paddingLeft="10dp" />
+
+          <TextView
+              android:id="@+id/attachment_name"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="10dp"
+              android:background="@drawable/just_round_corners"
+              android:paddingLeft="10dp"
+              android:text="c://abd/def/ghi."
+              android:textSize="16sp"
+              android:textStyle="italic" />
+      </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+         android:layout_marginTop="25dp"
+        
+     >
+
+        <Button
+            android:id="@+id/send"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:background="@drawable/button_style"
+            android:drawableLeft="@drawable/ic_action_send"
+            android:text="Send"
+            android:textSize="13sp" 
+             android:layout_alignParentLeft="true" />
+
+        <Button
+            android:id="@+id/discard"
+            android:layout_width="100dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="75dp"
+            android:background="@drawable/button_style"
+            android:drawableLeft="@drawable/ic_action_discard"
+            android:text="Discard"
+            android:textSize="13sp" 
+             android:layout_alignParentRight="true" />
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

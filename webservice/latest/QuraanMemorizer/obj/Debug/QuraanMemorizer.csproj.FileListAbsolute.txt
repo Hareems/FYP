@@ -1,0 +1,146 @@
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\QuraanMemorizer.dll.config
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\QuraanMemorizer.dll
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\QuraanMemorizer.pdb
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\Antlr3.Runtime.dll
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\EntityFramework.dll
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\EntityFramework.SqlServer.dll
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\Microsoft.Web.Infrastructure.dll
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\Newtonsoft.Json.dll
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Net.Http.Formatting.dll
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Web.Helpers.dll
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Web.Http.dll
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Web.Http.WebHost.dll
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Web.Mvc.dll
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Web.Optimization.dll
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Web.Razor.dll
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Web.WebPages.Deployment.dll
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Web.WebPages.dll
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Web.WebPages.Razor.dll
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\WebGrease.dll
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\EntityFramework.xml
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\EntityFramework.SqlServer.xml
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\Newtonsoft.Json.xml
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Net.Http.Formatting.xml
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Web.Helpers.xml
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Web.Http.xml
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Web.Http.WebHost.xml
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Web.Mvc.xml
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Web.Optimization.xml
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Web.Razor.xml
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Web.WebPages.xml
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Web.WebPages.Deployment.xml
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\System.Web.WebPages.Razor.xml
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\bin\Antlr3.Runtime.pdb
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\obj\Debug\QuraanMemorizer.dll
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\obj\Debug\QuraanMemorizer.pdb
+E:\University\FYP\Quraan Memorizer\QuraanMemorizer\QuraanMemorizer\obj\Debug\QuraanMemorizer.csprojResolveAssemblyReference.cache
+F:\FYP\QuraanMemorizer\obj\Debug\QuraanMemorizer.csprojResolveAssemblyReference.cache
+F:\FYP\QuraanMemorizer\bin\QuraanMemorizer.dll.config
+F:\FYP\QuraanMemorizer\bin\QuraanMemorizer.dll
+F:\FYP\QuraanMemorizer\bin\QuraanMemorizer.pdb
+F:\FYP\QuraanMemorizer\bin\Antlr3.Runtime.dll
+F:\FYP\QuraanMemorizer\bin\EntityFramework.dll
+F:\FYP\QuraanMemorizer\bin\EntityFramework.SqlServer.dll
+F:\FYP\QuraanMemorizer\bin\Microsoft.AspNet.Identity.Core.dll
+F:\FYP\QuraanMemorizer\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\FYP\QuraanMemorizer\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\FYP\QuraanMemorizer\bin\Microsoft.Owin.dll
+F:\FYP\QuraanMemorizer\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\FYP\QuraanMemorizer\bin\Microsoft.Owin.Security.Cookies.dll
+F:\FYP\QuraanMemorizer\bin\Microsoft.Owin.Security.dll
+F:\FYP\QuraanMemorizer\bin\Microsoft.Owin.Security.OAuth.dll
+F:\FYP\QuraanMemorizer\bin\Microsoft.Web.Infrastructure.dll
+F:\FYP\QuraanMemorizer\bin\Newtonsoft.Json.dll
+F:\FYP\QuraanMemorizer\bin\Owin.dll
+F:\FYP\QuraanMemorizer\bin\System.Net.Http.Formatting.dll
+F:\FYP\QuraanMemorizer\bin\System.Web.Helpers.dll
+F:\FYP\QuraanMemorizer\bin\System.Web.Http.dll
+F:\FYP\QuraanMemorizer\bin\System.Web.Http.Owin.dll
+F:\FYP\QuraanMemorizer\bin\System.Web.Http.WebHost.dll
+F:\FYP\QuraanMemorizer\bin\System.Web.Mvc.dll
+F:\FYP\QuraanMemorizer\bin\System.Web.Optimization.dll
+F:\FYP\QuraanMemorizer\bin\System.Web.Razor.dll
+F:\FYP\QuraanMemorizer\bin\System.Web.WebPages.Deployment.dll
+F:\FYP\QuraanMemorizer\bin\System.Web.WebPages.dll
+F:\FYP\QuraanMemorizer\bin\System.Web.WebPages.Razor.dll
+F:\FYP\QuraanMemorizer\bin\WebGrease.dll
+F:\FYP\QuraanMemorizer\bin\EntityFramework.xml
+F:\FYP\QuraanMemorizer\bin\EntityFramework.SqlServer.xml
+F:\FYP\QuraanMemorizer\bin\Microsoft.AspNet.Identity.Core.xml
+F:\FYP\QuraanMemorizer\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\FYP\QuraanMemorizer\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\FYP\QuraanMemorizer\bin\Microsoft.Owin.xml
+F:\FYP\QuraanMemorizer\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\FYP\QuraanMemorizer\bin\Microsoft.Owin.Security.xml
+F:\FYP\QuraanMemorizer\bin\Microsoft.Owin.Security.Cookies.xml
+F:\FYP\QuraanMemorizer\bin\Microsoft.Owin.Security.OAuth.xml
+F:\FYP\QuraanMemorizer\bin\System.Net.Http.Formatting.xml
+F:\FYP\QuraanMemorizer\bin\System.Web.Http.xml
+F:\FYP\QuraanMemorizer\bin\System.Web.Http.Owin.xml
+F:\FYP\QuraanMemorizer\bin\Newtonsoft.Json.xml
+F:\FYP\QuraanMemorizer\bin\System.Web.Helpers.xml
+F:\FYP\QuraanMemorizer\bin\System.Web.Http.WebHost.xml
+F:\FYP\QuraanMemorizer\bin\System.Web.Mvc.xml
+F:\FYP\QuraanMemorizer\bin\System.Web.Optimization.xml
+F:\FYP\QuraanMemorizer\bin\System.Web.Razor.xml
+F:\FYP\QuraanMemorizer\bin\System.Web.WebPages.xml
+F:\FYP\QuraanMemorizer\bin\System.Web.WebPages.Deployment.xml
+F:\FYP\QuraanMemorizer\bin\System.Web.WebPages.Razor.xml
+F:\FYP\QuraanMemorizer\bin\Antlr3.Runtime.pdb
+F:\FYP\QuraanMemorizer\obj\Debug\QuraanMemorizer.dll
+F:\FYP\QuraanMemorizer\obj\Debug\QuraanMemorizer.pdb
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\QuraanMemorizer.dll.config
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\QuraanMemorizer.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\QuraanMemorizer.pdb
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Antlr3.Runtime.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\EntityFramework.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\EntityFramework.SqlServer.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Microsoft.AspNet.Identity.Core.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Microsoft.Owin.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Microsoft.Owin.Security.Cookies.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Microsoft.Owin.Security.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Microsoft.Owin.Security.OAuth.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Microsoft.Web.Infrastructure.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Newtonsoft.Json.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Owin.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Net.Http.Formatting.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.Helpers.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.Http.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.Http.Owin.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.Http.WebHost.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.Mvc.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.Optimization.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.Razor.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.WebPages.Deployment.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.WebPages.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.WebPages.Razor.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\WebGrease.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\EntityFramework.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\EntityFramework.SqlServer.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Microsoft.AspNet.Identity.Core.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Microsoft.Owin.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Microsoft.Owin.Security.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Microsoft.Owin.Security.Cookies.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Microsoft.Owin.Security.OAuth.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Net.Http.Formatting.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.Http.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.Http.Owin.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Newtonsoft.Json.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.Helpers.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.Http.WebHost.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.Mvc.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.Optimization.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.Razor.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.WebPages.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.WebPages.Deployment.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\System.Web.WebPages.Razor.xml
+E:\visual studio13\latest\latest\QuraanMemorizer\bin\Antlr3.Runtime.pdb
+E:\visual studio13\latest\latest\QuraanMemorizer\obj\Debug\QuraanMemorizer.csprojResolveAssemblyReference.cache
+E:\visual studio13\latest\latest\QuraanMemorizer\obj\Debug\QuraanMemorizer.dll
+E:\visual studio13\latest\latest\QuraanMemorizer\obj\Debug\QuraanMemorizer.pdb

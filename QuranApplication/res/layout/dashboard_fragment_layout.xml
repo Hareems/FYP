@@ -1,0 +1,61 @@
+<!-- Your package folder -->
+<com.example.quranapplication.StudentDashboardLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:background="#EFEFEF" >
+    <!--  profile Button -->
+    <Button
+        android:id="@+id/profile_btn"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/profile"
+         android:layout_width="10dp"
+        android:textStyle="italic"
+      android:layout_gravity="left"
+            android:layout_height="20dp"
+        android:text="Profile" 
+        />
+     
+    <!--  Message Button -->
+    <Button
+        android:id="@+id/message_btn"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/message"
+        android:text="Message"
+        android:textStyle="italic" />
+     
+    <!--  Bookmarks Button -->
+    <Button
+        android:id="@+id/bookmark_btn"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/bokmark_icon"
+        android:textStyle="italic"
+        android:text="Bookmark" />
+     
+    <!--  Surah Button -->
+    <Button
+        android:id="@+id/surah_btn"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/surah"
+        android:text="Surahs"
+        android:textStyle="italic" />
+ 
+    <!--  Receiter Button -->
+    <Button
+        android:id="@+id/receiter_btn"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/quari"
+        android:text="Receiters" 
+        android:textStyle="italic"/>
+ 
+    
+ 
+     <!--  Quari Button -->
+    <Button
+        android:id="@+id/quari_btn"
+        style="@style/DashboardButton"
+        android:drawableTop="@drawable/settings"
+        android:text="Find Quari" 
+        android:textStyle="italic"/>
+</com.example.quranapplication.StudentDashboardLayout>

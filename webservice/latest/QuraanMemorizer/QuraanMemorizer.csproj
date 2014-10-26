@@ -1,0 +1,1497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{99737729-C86F-45A4-B10F-825B7D105643}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuraanMemorizer</RootNamespace>
+    <AssemblyName>QuraanMemorizer</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>Svn</SccProjectName>
+    <SccLocalPath>Svn</SccLocalPath>
+    <SccAuxPath>Svn</SccAuxPath>
+    <SccProvider>SubversionScc</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\EntityFramework.6.1.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.1.0\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.1.0\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.1.0\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.3.0.0\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.3.0.0\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.1.0\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.2.1.0\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.2.1.0\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.0\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.0\lib\net45\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Owin.5.2.0\lib\net45\System.Web.Http.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.0.0\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.0.0\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.1.1\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.0.0\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.0.0\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.5.2\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\Antlr.3.4.1.9004\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\IdentityConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\HelpPage\ApiDescriptionExtensions.cs" />
+    <Compile Include="Areas\HelpPage\App_Start\HelpPageConfig.cs" />
+    <Compile Include="Areas\HelpPage\Controllers\HelpController.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageAreaRegistration.cs" />
+    <Compile Include="Areas\HelpPage\HelpPageConfigurationExtensions.cs" />
+    <Compile Include="Areas\HelpPage\Models\HelpPageApiModel.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\HelpPageSampleKey.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ImageSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\InvalidSample.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\ObjectGenerator.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
+    <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
+    <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\JuzzController.cs" />
+    <Compile Include="Controllers\MessageController.cs" />
+    <Compile Include="Controllers\QuraanAudioController.cs" />
+    <Compile Include="Controllers\QuraanTextAyatController.cs" />
+    <Compile Include="Controllers\ReciterController.cs" />
+    <Compile Include="Controllers\SabaqController.cs" />
+    <Compile Include="Controllers\SurrahController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Models\AccountBindingModels.cs" />
+    <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Juzz.cs" />
+    <Compile Include="Models\Message.cs" />
+    <Compile Include="DAL\QuraanInitializer.cs" />
+    <Compile Include="DAL\QuraanMemorizerContext.cs" />
+    <Compile Include="Models\QuraanAudio.cs" />
+    <Compile Include="Models\QuraanText.cs" />
+    <Compile Include="Models\Reciter.cs" />
+    <Compile Include="Models\Sabaq.cs" />
+    <Compile Include="Models\Surrah.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Providers\ApplicationOAuthProvider.cs" />
+    <Compile Include="Results\ChallengeResult.cs" />
+    <Compile Include="Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Amma Audio\078000.mp3" />
+    <Content Include="Amma Audio\078001.mp3" />
+    <Content Include="Amma Audio\078002.mp3" />
+    <Content Include="Amma Audio\078003.mp3" />
+    <Content Include="Amma Audio\078004.mp3" />
+    <Content Include="Amma Audio\078005.mp3" />
+    <Content Include="Amma Audio\078006.mp3" />
+    <Content Include="Amma Audio\078007.mp3" />
+    <Content Include="Amma Audio\078008.mp3" />
+    <Content Include="Amma Audio\078009.mp3" />
+    <Content Include="Amma Audio\078010.mp3" />
+    <Content Include="Amma Audio\078011.mp3" />
+    <Content Include="Amma Audio\078012.mp3" />
+    <Content Include="Amma Audio\078013.mp3" />
+    <Content Include="Amma Audio\078014.mp3" />
+    <Content Include="Amma Audio\078015.mp3" />
+    <Content Include="Amma Audio\078016.mp3" />
+    <Content Include="Amma Audio\078017.mp3" />
+    <Content Include="Amma Audio\078018.mp3" />
+    <Content Include="Amma Audio\078019.mp3" />
+    <Content Include="Amma Audio\078020.mp3" />
+    <Content Include="Amma Audio\078021.mp3" />
+    <Content Include="Amma Audio\078022.mp3" />
+    <Content Include="Amma Audio\078023.mp3" />
+    <Content Include="Amma Audio\078024.mp3" />
+    <Content Include="Amma Audio\078025.mp3" />
+    <Content Include="Amma Audio\078026.mp3" />
+    <Content Include="Amma Audio\078027.mp3" />
+    <Content Include="Amma Audio\078028.mp3" />
+    <Content Include="Amma Audio\078029.mp3" />
+    <Content Include="Amma Audio\078030.mp3" />
+    <Content Include="Amma Audio\078031.mp3" />
+    <Content Include="Amma Audio\078032.mp3" />
+    <Content Include="Amma Audio\078033.mp3" />
+    <Content Include="Amma Audio\078034.mp3" />
+    <Content Include="Amma Audio\078035.mp3" />
+    <Content Include="Amma Audio\078036.mp3" />
+    <Content Include="Amma Audio\078037.mp3" />
+    <Content Include="Amma Audio\078038.mp3" />
+    <Content Include="Amma Audio\078039.mp3" />
+    <Content Include="Amma Audio\078040.mp3" />
+    <Content Include="Amma Audio\079000.mp3" />
+    <Content Include="Amma Audio\079001.mp3" />
+    <Content Include="Amma Audio\079002.mp3" />
+    <Content Include="Amma Audio\079003.mp3" />
+    <Content Include="Amma Audio\079004.mp3" />
+    <Content Include="Amma Audio\079005.mp3" />
+    <Content Include="Amma Audio\079006.mp3" />
+    <Content Include="Amma Audio\079007.mp3" />
+    <Content Include="Amma Audio\079008.mp3" />
+    <Content Include="Amma Audio\079009.mp3" />
+    <Content Include="Amma Audio\079010.mp3" />
+    <Content Include="Amma Audio\079011.mp3" />
+    <Content Include="Amma Audio\079012.mp3" />
+    <Content Include="Amma Audio\079013.mp3" />
+    <Content Include="Amma Audio\079014.mp3" />
+    <Content Include="Amma Audio\079015.mp3" />
+    <Content Include="Amma Audio\079016.mp3" />
+    <Content Include="Amma Audio\079017.mp3" />
+    <Content Include="Amma Audio\079018.mp3" />
+    <Content Include="Amma Audio\079019.mp3" />
+    <Content Include="Amma Audio\079020.mp3" />
+    <Content Include="Amma Audio\079021.mp3" />
+    <Content Include="Amma Audio\079022.mp3" />
+    <Content Include="Amma Audio\079023.mp3" />
+    <Content Include="Amma Audio\079024.mp3" />
+    <Content Include="Amma Audio\079025.mp3" />
+    <Content Include="Amma Audio\079026.mp3" />
+    <Content Include="Amma Audio\079027.mp3" />
+    <Content Include="Amma Audio\079028.mp3" />
+    <Content Include="Amma Audio\079029.mp3" />
+    <Content Include="Amma Audio\079030.mp3" />
+    <Content Include="Amma Audio\079031.mp3" />
+    <Content Include="Amma Audio\079032.mp3" />
+    <Content Include="Amma Audio\079033.mp3" />
+    <Content Include="Amma Audio\079034.mp3" />
+    <Content Include="Amma Audio\079035.mp3" />
+    <Content Include="Amma Audio\079036.mp3" />
+    <Content Include="Amma Audio\079037.mp3" />
+    <Content Include="Amma Audio\079038.mp3" />
+    <Content Include="Amma Audio\079039.mp3" />
+    <Content Include="Amma Audio\079040.mp3" />
+    <Content Include="Amma Audio\079041.mp3" />
+    <Content Include="Amma Audio\079042.mp3" />
+    <Content Include="Amma Audio\079043.mp3" />
+    <Content Include="Amma Audio\079044.mp3" />
+    <Content Include="Amma Audio\079045.mp3" />
+    <Content Include="Amma Audio\079046.mp3" />
+    <Content Include="Amma Audio\080000.mp3" />
+    <Content Include="Amma Audio\080001.mp3" />
+    <Content Include="Amma Audio\080002.mp3" />
+    <Content Include="Amma Audio\080003.mp3" />
+    <Content Include="Amma Audio\080004.mp3" />
+    <Content Include="Amma Audio\080005.mp3" />
+    <Content Include="Amma Audio\080006.mp3" />
+    <Content Include="Amma Audio\080007.mp3" />
+    <Content Include="Amma Audio\080008.mp3" />
+    <Content Include="Amma Audio\080009.mp3" />
+    <Content Include="Amma Audio\080010.mp3" />
+    <Content Include="Amma Audio\080011.mp3" />
+    <Content Include="Amma Audio\080012.mp3" />
+    <Content Include="Amma Audio\080013.mp3" />
+    <Content Include="Amma Audio\080014.mp3" />
+    <Content Include="Amma Audio\080015.mp3" />
+    <Content Include="Amma Audio\080016.mp3" />
+    <Content Include="Amma Audio\080017.mp3" />
+    <Content Include="Amma Audio\080018.mp3" />
+    <Content Include="Amma Audio\080019.mp3" />
+    <Content Include="Amma Audio\080020.mp3" />
+    <Content Include="Amma Audio\080021.mp3" />
+    <Content Include="Amma Audio\080022.mp3" />
+    <Content Include="Amma Audio\080023.mp3" />
+    <Content Include="Amma Audio\080024.mp3" />
+    <Content Include="Amma Audio\080025.mp3" />
+    <Content Include="Amma Audio\080026.mp3" />
+    <Content Include="Amma Audio\080027.mp3" />
+    <Content Include="Amma Audio\080028.mp3" />
+    <Content Include="Amma Audio\080029.mp3" />
+    <Content Include="Amma Audio\080030.mp3" />
+    <Content Include="Amma Audio\080031.mp3" />
+    <Content Include="Amma Audio\080032.mp3" />
+    <Content Include="Amma Audio\080033.mp3" />
+    <Content Include="Amma Audio\080034.mp3" />
+    <Content Include="Amma Audio\080035.mp3" />
+    <Content Include="Amma Audio\080036.mp3" />
+    <Content Include="Amma Audio\080037.mp3" />
+    <Content Include="Amma Audio\080038.mp3" />
+    <Content Include="Amma Audio\080039.mp3" />
+    <Content Include="Amma Audio\080040.mp3" />
+    <Content Include="Amma Audio\080041.mp3" />
+    <Content Include="Amma Audio\080042.mp3" />
+    <Content Include="Amma Audio\081000.mp3" />
+    <Content Include="Amma Audio\081001.mp3" />
+    <Content Include="Amma Audio\081002.mp3" />
+    <Content Include="Amma Audio\081003.mp3" />
+    <Content Include="Amma Audio\081004.mp3" />
+    <Content Include="Amma Audio\081005.mp3" />
+    <Content Include="Amma Audio\081006.mp3" />
+    <Content Include="Amma Audio\081007.mp3" />
+    <Content Include="Amma Audio\081008.mp3" />
+    <Content Include="Amma Audio\081009.mp3" />
+    <Content Include="Amma Audio\081010.mp3" />
+    <Content Include="Amma Audio\081011.mp3" />
+    <Content Include="Amma Audio\081012.mp3" />
+    <Content Include="Amma Audio\081013.mp3" />
+    <Content Include="Amma Audio\081014.mp3" />
+    <Content Include="Amma Audio\081015.mp3" />
+    <Content Include="Amma Audio\081016.mp3" />
+    <Content Include="Amma Audio\081017.mp3" />
+    <Content Include="Amma Audio\081018.mp3" />
+    <Content Include="Amma Audio\081019.mp3" />
+    <Content Include="Amma Audio\081020.mp3" />
+    <Content Include="Amma Audio\081021.mp3" />
+    <Content Include="Amma Audio\081022.mp3" />
+    <Content Include="Amma Audio\081023.mp3" />
+    <Content Include="Amma Audio\081024.mp3" />
+    <Content Include="Amma Audio\081025.mp3" />
+    <Content Include="Amma Audio\081026.mp3" />
+    <Content Include="Amma Audio\081027.mp3" />
+    <Content Include="Amma Audio\081028.mp3" />
+    <Content Include="Amma Audio\081029.mp3" />
+    <Content Include="Amma Audio\082000.mp3" />
+    <Content Include="Amma Audio\082001.mp3" />
+    <Content Include="Amma Audio\082002.mp3" />
+    <Content Include="Amma Audio\082003.mp3" />
+    <Content Include="Amma Audio\082004.mp3" />
+    <Content Include="Amma Audio\082005.mp3" />
+    <Content Include="Amma Audio\082006.mp3" />
+    <Content Include="Amma Audio\082007.mp3" />
+    <Content Include="Amma Audio\082008.mp3" />
+    <Content Include="Amma Audio\082009.mp3" />
+    <Content Include="Amma Audio\082010.mp3" />
+    <Content Include="Amma Audio\082011.mp3" />
+    <Content Include="Amma Audio\082012.mp3" />
+    <Content Include="Amma Audio\082013.mp3" />
+    <Content Include="Amma Audio\082014.mp3" />
+    <Content Include="Amma Audio\082015.mp3" />
+    <Content Include="Amma Audio\082016.mp3" />
+    <Content Include="Amma Audio\082017.mp3" />
+    <Content Include="Amma Audio\082018.mp3" />
+    <Content Include="Amma Audio\082019.mp3" />
+    <Content Include="Amma Audio\083000.mp3" />
+    <Content Include="Amma Audio\083001.mp3" />
+    <Content Include="Amma Audio\083002.mp3" />
+    <Content Include="Amma Audio\083003.mp3" />
+    <Content Include="Amma Audio\083004.mp3" />
+    <Content Include="Amma Audio\083005.mp3" />
+    <Content Include="Amma Audio\083006.mp3" />
+    <Content Include="Amma Audio\083007.mp3" />
+    <Content Include="Amma Audio\083008.mp3" />
+    <Content Include="Amma Audio\083009.mp3" />
+    <Content Include="Amma Audio\083010.mp3" />
+    <Content Include="Amma Audio\083011.mp3" />
+    <Content Include="Amma Audio\083012.mp3" />
+    <Content Include="Amma Audio\083013.mp3" />
+    <Content Include="Amma Audio\083014.mp3" />
+    <Content Include="Amma Audio\083015.mp3" />
+    <Content Include="Amma Audio\083016.mp3" />
+    <Content Include="Amma Audio\083017.mp3" />
+    <Content Include="Amma Audio\083018.mp3" />
+    <Content Include="Amma Audio\083019.mp3" />
+    <Content Include="Amma Audio\083020.mp3" />
+    <Content Include="Amma Audio\083021.mp3" />
+    <Content Include="Amma Audio\083022.mp3" />
+    <Content Include="Amma Audio\083023.mp3" />
+    <Content Include="Amma Audio\083024.mp3" />
+    <Content Include="Amma Audio\083025.mp3" />
+    <Content Include="Amma Audio\083026.mp3" />
+    <Content Include="Amma Audio\083027.mp3" />
+    <Content Include="Amma Audio\083028.mp3" />
+    <Content Include="Amma Audio\083029.mp3" />
+    <Content Include="Amma Audio\083030.mp3" />
+    <Content Include="Amma Audio\083031.mp3" />
+    <Content Include="Amma Audio\083032.mp3" />
+    <Content Include="Amma Audio\083033.mp3" />
+    <Content Include="Amma Audio\083034.mp3" />
+    <Content Include="Amma Audio\083035.mp3" />
+    <Content Include="Amma Audio\083036.mp3" />
+    <Content Include="Amma Audio\084000.mp3" />
+    <Content Include="Amma Audio\084001.mp3" />
+    <Content Include="Amma Audio\084002.mp3" />
+    <Content Include="Amma Audio\084003.mp3" />
+    <Content Include="Amma Audio\084004.mp3" />
+    <Content Include="Amma Audio\084005.mp3" />
+    <Content Include="Amma Audio\084006.mp3" />
+    <Content Include="Amma Audio\084007.mp3" />
+    <Content Include="Amma Audio\084008.mp3" />
+    <Content Include="Amma Audio\084009.mp3" />
+    <Content Include="Amma Audio\084010.mp3" />
+    <Content Include="Amma Audio\084011.mp3" />
+    <Content Include="Amma Audio\084012.mp3" />
+    <Content Include="Amma Audio\084013.mp3" />
+    <Content Include="Amma Audio\084014.mp3" />
+    <Content Include="Amma Audio\084015.mp3" />
+    <Content Include="Amma Audio\084016.mp3" />
+    <Content Include="Amma Audio\084017.mp3" />
+    <Content Include="Amma Audio\084018.mp3" />
+    <Content Include="Amma Audio\084019.mp3" />
+    <Content Include="Amma Audio\084020.mp3" />
+    <Content Include="Amma Audio\084021.mp3" />
+    <Content Include="Amma Audio\084022.mp3" />
+    <Content Include="Amma Audio\084023.mp3" />
+    <Content Include="Amma Audio\084024.mp3" />
+    <Content Include="Amma Audio\084025.mp3" />
+    <Content Include="Amma Audio\085000.mp3" />
+    <Content Include="Amma Audio\085001.mp3" />
+    <Content Include="Amma Audio\085002.mp3" />
+    <Content Include="Amma Audio\085003.mp3" />
+    <Content Include="Amma Audio\085004.mp3" />
+    <Content Include="Amma Audio\085005.mp3" />
+    <Content Include="Amma Audio\085006.mp3" />
+    <Content Include="Amma Audio\085007.mp3" />
+    <Content Include="Amma Audio\085008.mp3" />
+    <Content Include="Amma Audio\085009.mp3" />
+    <Content Include="Amma Audio\085010.mp3" />
+    <Content Include="Amma Audio\085011.mp3" />
+    <Content Include="Amma Audio\085012.mp3" />
+    <Content Include="Amma Audio\085013.mp3" />
+    <Content Include="Amma Audio\085014.mp3" />
+    <Content Include="Amma Audio\085015.mp3" />
+    <Content Include="Amma Audio\085016.mp3" />
+    <Content Include="Amma Audio\085017.mp3" />
+    <Content Include="Amma Audio\085018.mp3" />
+    <Content Include="Amma Audio\085019.mp3" />
+    <Content Include="Amma Audio\085020.mp3" />
+    <Content Include="Amma Audio\085021.mp3" />
+    <Content Include="Amma Audio\085022.mp3" />
+    <Content Include="Amma Audio\086000.mp3" />
+    <Content Include="Amma Audio\086001.mp3" />
+    <Content Include="Amma Audio\086002.mp3" />
+    <Content Include="Amma Audio\086003.mp3" />
+    <Content Include="Amma Audio\086004.mp3" />
+    <Content Include="Amma Audio\086005.mp3" />
+    <Content Include="Amma Audio\086006.mp3" />
+    <Content Include="Amma Audio\086007.mp3" />
+    <Content Include="Amma Audio\086008.mp3" />
+    <Content Include="Amma Audio\086009.mp3" />
+    <Content Include="Amma Audio\086010.mp3" />
+    <Content Include="Amma Audio\086011.mp3" />
+    <Content Include="Amma Audio\086012.mp3" />
+    <Content Include="Amma Audio\086013.mp3" />
+    <Content Include="Amma Audio\086014.mp3" />
+    <Content Include="Amma Audio\086015.mp3" />
+    <Content Include="Amma Audio\086016.mp3" />
+    <Content Include="Amma Audio\086017.mp3" />
+    <Content Include="Amma Audio\087000.mp3" />
+    <Content Include="Amma Audio\087001.mp3" />
+    <Content Include="Amma Audio\087002.mp3" />
+    <Content Include="Amma Audio\087003.mp3" />
+    <Content Include="Amma Audio\087004.mp3" />
+    <Content Include="Amma Audio\087005.mp3" />
+    <Content Include="Amma Audio\087006.mp3" />
+    <Content Include="Amma Audio\087007.mp3" />
+    <Content Include="Amma Audio\087008.mp3" />
+    <Content Include="Amma Audio\087009.mp3" />
+    <Content Include="Amma Audio\087010.mp3" />
+    <Content Include="Amma Audio\087011.mp3" />
+    <Content Include="Amma Audio\087012.mp3" />
+    <Content Include="Amma Audio\087013.mp3" />
+    <Content Include="Amma Audio\087014.mp3" />
+    <Content Include="Amma Audio\087015.mp3" />
+    <Content Include="Amma Audio\087016.mp3" />
+    <Content Include="Amma Audio\087017.mp3" />
+    <Content Include="Amma Audio\087018.mp3" />
+    <Content Include="Amma Audio\087019.mp3" />
+    <Content Include="Amma Audio\088000.mp3" />
+    <Content Include="Amma Audio\088001.mp3" />
+    <Content Include="Amma Audio\088002.mp3" />
+    <Content Include="Amma Audio\088003.mp3" />
+    <Content Include="Amma Audio\088004.mp3" />
+    <Content Include="Amma Audio\088005.mp3" />
+    <Content Include="Amma Audio\088006.mp3" />
+    <Content Include="Amma Audio\088007.mp3" />
+    <Content Include="Amma Audio\088008.mp3" />
+    <Content Include="Amma Audio\088009.mp3" />
+    <Content Include="Amma Audio\088010.mp3" />
+    <Content Include="Amma Audio\088011.mp3" />
+    <Content Include="Amma Audio\088012.mp3" />
+    <Content Include="Amma Audio\088013.mp3" />
+    <Content Include="Amma Audio\088014.mp3" />
+    <Content Include="Amma Audio\088015.mp3" />
+    <Content Include="Amma Audio\088016.mp3" />
+    <Content Include="Amma Audio\088017.mp3" />
+    <Content Include="Amma Audio\088018.mp3" />
+    <Content Include="Amma Audio\088019.mp3" />
+    <Content Include="Amma Audio\088020.mp3" />
+    <Content Include="Amma Audio\088021.mp3" />
+    <Content Include="Amma Audio\088022.mp3" />
+    <Content Include="Amma Audio\088023.mp3" />
+    <Content Include="Amma Audio\088024.mp3" />
+    <Content Include="Amma Audio\088025.mp3" />
+    <Content Include="Amma Audio\088026.mp3" />
+    <Content Include="Amma Audio\089000.mp3" />
+    <Content Include="Amma Audio\089001.mp3" />
+    <Content Include="Amma Audio\089002.mp3" />
+    <Content Include="Amma Audio\089003.mp3" />
+    <Content Include="Amma Audio\089004.mp3" />
+    <Content Include="Amma Audio\089005.mp3" />
+    <Content Include="Amma Audio\089006.mp3" />
+    <Content Include="Amma Audio\089007.mp3" />
+    <Content Include="Amma Audio\089008.mp3" />
+    <Content Include="Amma Audio\089009.mp3" />
+    <Content Include="Amma Audio\089010.mp3" />
+    <Content Include="Amma Audio\089011.mp3" />
+    <Content Include="Amma Audio\089012.mp3" />
+    <Content Include="Amma Audio\089013.mp3" />
+    <Content Include="Amma Audio\089014.mp3" />
+    <Content Include="Amma Audio\089015.mp3" />
+    <Content Include="Amma Audio\089016.mp3" />
+    <Content Include="Amma Audio\089017.mp3" />
+    <Content Include="Amma Audio\089018.mp3" />
+    <Content Include="Amma Audio\089019.mp3" />
+    <Content Include="Amma Audio\089020.mp3" />
+    <Content Include="Amma Audio\089021.mp3" />
+    <Content Include="Amma Audio\089022.mp3" />
+    <Content Include="Amma Audio\089023.mp3" />
+    <Content Include="Amma Audio\089024.mp3" />
+    <Content Include="Amma Audio\089025.mp3" />
+    <Content Include="Amma Audio\089026.mp3" />
+    <Content Include="Amma Audio\089027.mp3" />
+    <Content Include="Amma Audio\089028.mp3" />
+    <Content Include="Amma Audio\089029.mp3" />
+    <Content Include="Amma Audio\089030.mp3" />
+    <Content Include="Amma Audio\090000.mp3" />
+    <Content Include="Amma Audio\090001.mp3" />
+    <Content Include="Amma Audio\090002.mp3" />
+    <Content Include="Amma Audio\090003.mp3" />
+    <Content Include="Amma Audio\090004.mp3" />
+    <Content Include="Amma Audio\090005.mp3" />
+    <Content Include="Amma Audio\090006.mp3" />
+    <Content Include="Amma Audio\090007.mp3" />
+    <Content Include="Amma Audio\090008.mp3" />
+    <Content Include="Amma Audio\090009.mp3" />
+    <Content Include="Amma Audio\090010.mp3" />
+    <Content Include="Amma Audio\090011.mp3" />
+    <Content Include="Amma Audio\090012.mp3" />
+    <Content Include="Amma Audio\090013.mp3" />
+    <Content Include="Amma Audio\090014.mp3" />
+    <Content Include="Amma Audio\090015.mp3" />
+    <Content Include="Amma Audio\090016.mp3" />
+    <Content Include="Amma Audio\090017.mp3" />
+    <Content Include="Amma Audio\090018.mp3" />
+    <Content Include="Amma Audio\090019.mp3" />
+    <Content Include="Amma Audio\090020.mp3" />
+    <Content Include="Amma Audio\091000.mp3" />
+    <Content Include="Amma Audio\091001.mp3" />
+    <Content Include="Amma Audio\091002.mp3" />
+    <Content Include="Amma Audio\091003.mp3" />
+    <Content Include="Amma Audio\091004.mp3" />
+    <Content Include="Amma Audio\091005.mp3" />
+    <Content Include="Amma Audio\091006.mp3" />
+    <Content Include="Amma Audio\091007.mp3" />
+    <Content Include="Amma Audio\091008.mp3" />
+    <Content Include="Amma Audio\091009.mp3" />
+    <Content Include="Amma Audio\091010.mp3" />
+    <Content Include="Amma Audio\091011.mp3" />
+    <Content Include="Amma Audio\091012.mp3" />
+    <Content Include="Amma Audio\091013.mp3" />
+    <Content Include="Amma Audio\091014.mp3" />
+    <Content Include="Amma Audio\091015.mp3" />
+    <Content Include="Amma Audio\092000.mp3" />
+    <Content Include="Amma Audio\092001.mp3" />
+    <Content Include="Amma Audio\092002.mp3" />
+    <Content Include="Amma Audio\092003.mp3" />
+    <Content Include="Amma Audio\092004.mp3" />
+    <Content Include="Amma Audio\092005.mp3" />
+    <Content Include="Amma Audio\092006.mp3" />
+    <Content Include="Amma Audio\092007.mp3" />
+    <Content Include="Amma Audio\092008.mp3" />
+    <Content Include="Amma Audio\092009.mp3" />
+    <Content Include="Amma Audio\092010.mp3" />
+    <Content Include="Amma Audio\092011.mp3" />
+    <Content Include="Amma Audio\092012.mp3" />
+    <Content Include="Amma Audio\092013.mp3" />
+    <Content Include="Amma Audio\092014.mp3" />
+    <Content Include="Amma Audio\092015.mp3" />
+    <Content Include="Amma Audio\092016.mp3" />
+    <Content Include="Amma Audio\092017.mp3" />
+    <Content Include="Amma Audio\092018.mp3" />
+    <Content Include="Amma Audio\092019.mp3" />
+    <Content Include="Amma Audio\092020.mp3" />
+    <Content Include="Amma Audio\092021.mp3" />
+    <Content Include="Amma Audio\093000.mp3" />
+    <Content Include="Amma Audio\093001.mp3" />
+    <Content Include="Amma Audio\093002.mp3" />
+    <Content Include="Amma Audio\093003.mp3" />
+    <Content Include="Amma Audio\093004.mp3" />
+    <Content Include="Amma Audio\093005.mp3" />
+    <Content Include="Amma Audio\093006.mp3" />
+    <Content Include="Amma Audio\093007.mp3" />
+    <Content Include="Amma Audio\093008.mp3" />
+    <Content Include="Amma Audio\093009.mp3" />
+    <Content Include="Amma Audio\093010.mp3" />
+    <Content Include="Amma Audio\093011.mp3" />
+    <Content Include="Amma Audio\094000.mp3" />
+    <Content Include="Amma Audio\094001.mp3" />
+    <Content Include="Amma Audio\094002.mp3" />
+    <Content Include="Amma Audio\094003.mp3" />
+    <Content Include="Amma Audio\094004.mp3" />
+    <Content Include="Amma Audio\094005.mp3" />
+    <Content Include="Amma Audio\094006.mp3" />
+    <Content Include="Amma Audio\094007.mp3" />
+    <Content Include="Amma Audio\094008.mp3" />
+    <Content Include="Amma Audio\095000.mp3" />
+    <Content Include="Amma Audio\095001.mp3" />
+    <Content Include="Amma Audio\095002.mp3" />
+    <Content Include="Amma Audio\095003.mp3" />
+    <Content Include="Amma Audio\095004.mp3" />
+    <Content Include="Amma Audio\095005.mp3" />
+    <Content Include="Amma Audio\095006.mp3" />
+    <Content Include="Amma Audio\095007.mp3" />
+    <Content Include="Amma Audio\095008.mp3" />
+    <Content Include="Amma Audio\096000.mp3" />
+    <Content Include="Amma Audio\096001.mp3" />
+    <Content Include="Amma Audio\096002.mp3" />
+    <Content Include="Amma Audio\096003.mp3" />
+    <Content Include="Amma Audio\096004.mp3" />
+    <Content Include="Amma Audio\096005.mp3" />
+    <Content Include="Amma Audio\096006.mp3" />
+    <Content Include="Amma Audio\096007.mp3" />
+    <Content Include="Amma Audio\096008.mp3" />
+    <Content Include="Amma Audio\096009.mp3" />
+    <Content Include="Amma Audio\096010.mp3" />
+    <Content Include="Amma Audio\096011.mp3" />
+    <Content Include="Amma Audio\096012.mp3" />
+    <Content Include="Amma Audio\096013.mp3" />
+    <Content Include="Amma Audio\096014.mp3" />
+    <Content Include="Amma Audio\096015.mp3" />
+    <Content Include="Amma Audio\096016.mp3" />
+    <Content Include="Amma Audio\096017.mp3" />
+    <Content Include="Amma Audio\096018.mp3" />
+    <Content Include="Amma Audio\096019.mp3" />
+    <Content Include="Amma Audio\097000.mp3" />
+    <Content Include="Amma Audio\097001.mp3" />
+    <Content Include="Amma Audio\097002.mp3" />
+    <Content Include="Amma Audio\097003.mp3" />
+    <Content Include="Amma Audio\097004.mp3" />
+    <Content Include="Amma Audio\097005.mp3" />
+    <Content Include="Amma Audio\098000.mp3" />
+    <Content Include="Amma Audio\098001.mp3" />
+    <Content Include="Amma Audio\098002.mp3" />
+    <Content Include="Amma Audio\098003.mp3" />
+    <Content Include="Amma Audio\098004.mp3" />
+    <Content Include="Amma Audio\098005.mp3" />
+    <Content Include="Amma Audio\098006.mp3" />
+    <Content Include="Amma Audio\098007.mp3" />
+    <Content Include="Amma Audio\098008.mp3" />
+    <Content Include="Amma Audio\099000.mp3" />
+    <Content Include="Amma Audio\099001.mp3" />
+    <Content Include="Amma Audio\099002.mp3" />
+    <Content Include="Amma Audio\099003.mp3" />
+    <Content Include="Amma Audio\099004.mp3" />
+    <Content Include="Amma Audio\099005.mp3" />
+    <Content Include="Amma Audio\099006.mp3" />
+    <Content Include="Amma Audio\099007.mp3" />
+    <Content Include="Amma Audio\099008.mp3" />
+    <Content Include="Amma Audio\100000.mp3" />
+    <Content Include="Amma Audio\100001.mp3" />
+    <Content Include="Amma Audio\100002.mp3" />
+    <Content Include="Amma Audio\100003.mp3" />
+    <Content Include="Amma Audio\100004.mp3" />
+    <Content Include="Amma Audio\100005.mp3" />
+    <Content Include="Amma Audio\100006.mp3" />
+    <Content Include="Amma Audio\100007.mp3" />
+    <Content Include="Amma Audio\100008.mp3" />
+    <Content Include="Amma Audio\100009.mp3" />
+    <Content Include="Amma Audio\100010.mp3" />
+    <Content Include="Amma Audio\100011.mp3" />
+    <Content Include="Amma Audio\101000.mp3" />
+    <Content Include="Amma Audio\101001.mp3" />
+    <Content Include="Amma Audio\101002.mp3" />
+    <Content Include="Amma Audio\101003.mp3" />
+    <Content Include="Amma Audio\101004.mp3" />
+    <Content Include="Amma Audio\101005.mp3" />
+    <Content Include="Amma Audio\101006.mp3" />
+    <Content Include="Amma Audio\101007.mp3" />
+    <Content Include="Amma Audio\101008.mp3" />
+    <Content Include="Amma Audio\101009.mp3" />
+    <Content Include="Amma Audio\101010.mp3" />
+    <Content Include="Amma Audio\101011.mp3" />
+    <Content Include="Amma Audio\102000.mp3" />
+    <Content Include="Amma Audio\102001.mp3" />
+    <Content Include="Amma Audio\102002.mp3" />
+    <Content Include="Amma Audio\102003.mp3" />
+    <Content Include="Amma Audio\102004.mp3" />
+    <Content Include="Amma Audio\102005.mp3" />
+    <Content Include="Amma Audio\102006.mp3" />
+    <Content Include="Amma Audio\102007.mp3" />
+    <Content Include="Amma Audio\102008.mp3" />
+    <Content Include="Amma Audio\103000.mp3" />
+    <Content Include="Amma Audio\103001.mp3" />
+    <Content Include="Amma Audio\103002.mp3" />
+    <Content Include="Amma Audio\103003.mp3" />
+    <Content Include="Amma Audio\104000.mp3" />
+    <Content Include="Amma Audio\104001.mp3" />
+    <Content Include="Amma Audio\104002.mp3" />
+    <Content Include="Amma Audio\104003.mp3" />
+    <Content Include="Amma Audio\104004.mp3" />
+    <Content Include="Amma Audio\104005.mp3" />
+    <Content Include="Amma Audio\104006.mp3" />
+    <Content Include="Amma Audio\104007.mp3" />
+    <Content Include="Amma Audio\104008.mp3" />
+    <Content Include="Amma Audio\104009.mp3" />
+    <Content Include="Amma Audio\105000.mp3" />
+    <Content Include="Amma Audio\105001.mp3" />
+    <Content Include="Amma Audio\105002.mp3" />
+    <Content Include="Amma Audio\105003.mp3" />
+    <Content Include="Amma Audio\105004.mp3" />
+    <Content Include="Amma Audio\105005.mp3" />
+    <Content Include="Amma Audio\106000.mp3" />
+    <Content Include="Amma Audio\106001.mp3" />
+    <Content Include="Amma Audio\106002.mp3" />
+    <Content Include="Amma Audio\106003.mp3" />
+    <Content Include="Amma Audio\106004.mp3" />
+    <Content Include="Amma Audio\107000.mp3" />
+    <Content Include="Amma Audio\107001.mp3" />
+    <Content Include="Amma Audio\107002.mp3" />
+    <Content Include="Amma Audio\107003.mp3" />
+    <Content Include="Amma Audio\107004.mp3" />
+    <Content Include="Amma Audio\107005.mp3" />
+    <Content Include="Amma Audio\107006.mp3" />
+    <Content Include="Amma Audio\107007.mp3" />
+    <Content Include="Amma Audio\108000.mp3" />
+    <Content Include="Amma Audio\108001.mp3" />
+    <Content Include="Amma Audio\108002.mp3" />
+    <Content Include="Amma Audio\108003.mp3" />
+    <Content Include="Amma Audio\109000.mp3" />
+    <Content Include="Amma Audio\109001.mp3" />
+    <Content Include="Amma Audio\109002.mp3" />
+    <Content Include="Amma Audio\109003.mp3" />
+    <Content Include="Amma Audio\109004.mp3" />
+    <Content Include="Amma Audio\109005.mp3" />
+    <Content Include="Amma Audio\109006.mp3" />
+    <Content Include="Amma Audio\110000.mp3" />
+    <Content Include="Amma Audio\110001.mp3" />
+    <Content Include="Amma Audio\110002.mp3" />
+    <Content Include="Amma Audio\110003.mp3" />
+    <Content Include="Amma Audio\111000.mp3" />
+    <Content Include="Amma Audio\111001.mp3" />
+    <Content Include="Amma Audio\111002.mp3" />
+    <Content Include="Amma Audio\111003.mp3" />
+    <Content Include="Amma Audio\111004.mp3" />
+    <Content Include="Amma Audio\111005.mp3" />
+    <Content Include="Amma Audio\112000.mp3" />
+    <Content Include="Amma Audio\112001.mp3" />
+    <Content Include="Amma Audio\112002.mp3" />
+    <Content Include="Amma Audio\112003.mp3" />
+    <Content Include="Amma Audio\112004.mp3" />
+    <Content Include="Amma Audio\113000.mp3" />
+    <Content Include="Amma Audio\113001.mp3" />
+    <Content Include="Amma Audio\113002.mp3" />
+    <Content Include="Amma Audio\113003.mp3" />
+    <Content Include="Amma Audio\113004.mp3" />
+    <Content Include="Amma Audio\113005.mp3" />
+    <Content Include="Amma Audio\114000.mp3" />
+    <Content Include="Amma Audio\114001.mp3" />
+    <Content Include="Amma Audio\114002.mp3" />
+    <Content Include="Amma Audio\114003.mp3" />
+    <Content Include="Amma Audio\114004.mp3" />
+    <Content Include="Amma Audio\114005.mp3" />
+    <Content Include="Amma Audio\114006.mp3" />
+    <Content Include="Amma Juzz\100_0.png" />
+    <Content Include="Amma Juzz\100_1.png" />
+    <Content Include="Amma Juzz\100_10.png" />
+    <Content Include="Amma Juzz\100_11.png" />
+    <Content Include="Amma Juzz\100_2.png" />
+    <Content Include="Amma Juzz\100_3.png" />
+    <Content Include="Amma Juzz\100_4.png" />
+    <Content Include="Amma Juzz\100_5.png" />
+    <Content Include="Amma Juzz\100_6.png" />
+    <Content Include="Amma Juzz\100_7.png" />
+    <Content Include="Amma Juzz\100_8.png" />
+    <Content Include="Amma Juzz\100_9.png" />
+    <Content Include="Amma Juzz\101_0.png" />
+    <Content Include="Amma Juzz\101_1.png" />
+    <Content Include="Amma Juzz\101_10.png" />
+    <Content Include="Amma Juzz\101_11.png" />
+    <Content Include="Amma Juzz\101_2.png" />
+    <Content Include="Amma Juzz\101_3.png" />
+    <Content Include="Amma Juzz\101_4.png" />
+    <Content Include="Amma Juzz\101_5.png" />
+    <Content Include="Amma Juzz\101_6.png" />
+    <Content Include="Amma Juzz\101_7.png" />
+    <Content Include="Amma Juzz\101_8.png" />
+    <Content Include="Amma Juzz\101_9.png" />
+    <Content Include="Amma Juzz\102_0.png" />
+    <Content Include="Amma Juzz\102_1.png" />
+    <Content Include="Amma Juzz\102_2.png" />
+    <Content Include="Amma Juzz\102_3.png" />
+    <Content Include="Amma Juzz\102_4.png" />
+    <Content Include="Amma Juzz\102_5.png" />
+    <Content Include="Amma Juzz\102_6.png" />
+    <Content Include="Amma Juzz\102_7.png" />
+    <Content Include="Amma Juzz\102_8.png" />
+    <Content Include="Amma Juzz\103_0.png" />
+    <Content Include="Amma Juzz\103_1.png" />
+    <Content Include="Amma Juzz\103_2.png" />
+    <Content Include="Amma Juzz\103_3.png" />
+    <Content Include="Amma Juzz\104_0.png" />
+    <Content Include="Amma Juzz\104_1.png" />
+    <Content Include="Amma Juzz\104_2.png" />
+    <Content Include="Amma Juzz\104_3.png" />
+    <Content Include="Amma Juzz\104_4.png" />
+    <Content Include="Amma Juzz\104_5.png" />
+    <Content Include="Amma Juzz\104_6.png" />
+    <Content Include="Amma Juzz\104_7.png" />
+    <Content Include="Amma Juzz\104_8.png" />
+    <Content Include="Amma Juzz\104_9.png" />
+    <Content Include="Amma Juzz\105_0.png" />
+    <Content Include="Amma Juzz\105_1.png" />
+    <Content Include="Amma Juzz\105_2.png" />
+    <Content Include="Amma Juzz\105_3.png" />
+    <Content Include="Amma Juzz\105_4.png" />
+    <Content Include="Amma Juzz\105_5.png" />
+    <Content Include="Amma Juzz\106_0.png" />
+    <Content Include="Amma Juzz\106_1.png" />
+    <Content Include="Amma Juzz\106_2.png" />
+    <Content Include="Amma Juzz\106_3.png" />
+    <Content Include="Amma Juzz\106_4.png" />
+    <Content Include="Amma Juzz\107_0.png" />
+    <Content Include="Amma Juzz\107_1.png" />
+    <Content Include="Amma Juzz\107_2.png" />
+    <Content Include="Amma Juzz\107_3.png" />
+    <Content Include="Amma Juzz\107_4.png" />
+    <Content Include="Amma Juzz\107_5.png" />
+    <Content Include="Amma Juzz\107_6.png" />
+    <Content Include="Amma Juzz\107_7.png" />
+    <Content Include="Amma Juzz\108_0.png" />
+    <Content Include="Amma Juzz\108_1.png" />
+    <Content Include="Amma Juzz\108_2.png" />
+    <Content Include="Amma Juzz\108_3.png" />
+    <Content Include="Amma Juzz\109_0.png" />
+    <Content Include="Amma Juzz\109_1.png" />
+    <Content Include="Amma Juzz\109_2.png" />
+    <Content Include="Amma Juzz\109_3.png" />
+    <Content Include="Amma Juzz\109_4.png" />
+    <Content Include="Amma Juzz\109_5.png" />
+    <Content Include="Amma Juzz\109_6.png" />
+    <Content Include="Amma Juzz\110_0.png" />
+    <Content Include="Amma Juzz\110_1.png" />
+    <Content Include="Amma Juzz\110_2.png" />
+    <Content Include="Amma Juzz\110_3.png" />
+    <Content Include="Amma Juzz\111_0.png" />
+    <Content Include="Amma Juzz\111_1.png" />
+    <Content Include="Amma Juzz\111_2.png" />
+    <Content Include="Amma Juzz\111_3.png" />
+    <Content Include="Amma Juzz\111_4.png" />
+    <Content Include="Amma Juzz\111_5.png" />
+    <Content Include="Amma Juzz\112_0.png" />
+    <Content Include="Amma Juzz\112_1.png" />
+    <Content Include="Amma Juzz\112_2.png" />
+    <Content Include="Amma Juzz\112_3.png" />
+    <Content Include="Amma Juzz\112_4.png" />
+    <Content Include="Amma Juzz\113_0.png" />
+    <Content Include="Amma Juzz\113_1.png" />
+    <Content Include="Amma Juzz\113_2.png" />
+    <Content Include="Amma Juzz\113_3.png" />
+    <Content Include="Amma Juzz\113_4.png" />
+    <Content Include="Amma Juzz\113_5.png" />
+    <Content Include="Amma Juzz\114_0.png" />
+    <Content Include="Amma Juzz\114_1.png" />
+    <Content Include="Amma Juzz\114_2.png" />
+    <Content Include="Amma Juzz\114_3.png" />
+    <Content Include="Amma Juzz\114_4.png" />
+    <Content Include="Amma Juzz\114_5.png" />
+    <Content Include="Amma Juzz\114_6.png" />
+    <Content Include="Amma Juzz\78_0.png" />
+    <Content Include="Amma Juzz\78_1.png" />
+    <Content Include="Amma Juzz\78_10.png" />
+    <Content Include="Amma Juzz\78_11.png" />
+    <Content Include="Amma Juzz\78_12.png" />
+    <Content Include="Amma Juzz\78_13.png" />
+    <Content Include="Amma Juzz\78_14.png" />
+    <Content Include="Amma Juzz\78_15.png" />
+    <Content Include="Amma Juzz\78_16.png" />
+    <Content Include="Amma Juzz\78_17.png" />
+    <Content Include="Amma Juzz\78_18.png" />
+    <Content Include="Amma Juzz\78_19.png" />
+    <Content Include="Amma Juzz\78_2.png" />
+    <Content Include="Amma Juzz\78_20.png" />
+    <Content Include="Amma Juzz\78_21.png" />
+    <Content Include="Amma Juzz\78_22.png" />
+    <Content Include="Amma Juzz\78_23.png" />
+    <Content Include="Amma Juzz\78_24.png" />
+    <Content Include="Amma Juzz\78_25.png" />
+    <Content Include="Amma Juzz\78_26.png" />
+    <Content Include="Amma Juzz\78_27.png" />
+    <Content Include="Amma Juzz\78_28.png" />
+    <Content Include="Amma Juzz\78_29.png" />
+    <Content Include="Amma Juzz\78_3.png" />
+    <Content Include="Amma Juzz\78_30.png" />
+    <Content Include="Amma Juzz\78_31.png" />
+    <Content Include="Amma Juzz\78_32.png" />
+    <Content Include="Amma Juzz\78_33.png" />
+    <Content Include="Amma Juzz\78_34.png" />
+    <Content Include="Amma Juzz\78_35.png" />
+    <Content Include="Amma Juzz\78_36.png" />
+    <Content Include="Amma Juzz\78_37.png" />
+    <Content Include="Amma Juzz\78_38.png" />
+    <Content Include="Amma Juzz\78_39.png" />
+    <Content Include="Amma Juzz\78_4.png" />
+    <Content Include="Amma Juzz\78_40.png" />
+    <Content Include="Amma Juzz\78_5.png" />
+    <Content Include="Amma Juzz\78_6.png" />
+    <Content Include="Amma Juzz\78_7.png" />
+    <Content Include="Amma Juzz\78_8.png" />
+    <Content Include="Amma Juzz\78_9.png" />
+    <Content Include="Amma Juzz\79_0.png" />
+    <Content Include="Amma Juzz\79_1.png" />
+    <Content Include="Amma Juzz\79_10.png" />
+    <Content Include="Amma Juzz\79_11.png" />
+    <Content Include="Amma Juzz\79_12.png" />
+    <Content Include="Amma Juzz\79_13.png" />
+    <Content Include="Amma Juzz\79_14.png" />
+    <Content Include="Amma Juzz\79_15.png" />
+    <Content Include="Amma Juzz\79_16.png" />
+    <Content Include="Amma Juzz\79_17.png" />
+    <Content Include="Amma Juzz\79_18.png" />
+    <Content Include="Amma Juzz\79_19.png" />
+    <Content Include="Amma Juzz\79_2.png" />
+    <Content Include="Amma Juzz\79_20.png" />
+    <Content Include="Amma Juzz\79_21.png" />
+    <Content Include="Amma Juzz\79_22.png" />
+    <Content Include="Amma Juzz\79_23.png" />
+    <Content Include="Amma Juzz\79_24.png" />
+    <Content Include="Amma Juzz\79_25.png" />
+    <Content Include="Amma Juzz\79_26.png" />
+    <Content Include="Amma Juzz\79_27.png" />
+    <Content Include="Amma Juzz\79_28.png" />
+    <Content Include="Amma Juzz\79_29.png" />
+    <Content Include="Amma Juzz\79_3.png" />
+    <Content Include="Amma Juzz\79_30.png" />
+    <Content Include="Amma Juzz\79_31.png" />
+    <Content Include="Amma Juzz\79_32.png" />
+    <Content Include="Amma Juzz\79_33.png" />
+    <Content Include="Amma Juzz\79_34.png" />
+    <Content Include="Amma Juzz\79_35.png" />
+    <Content Include="Amma Juzz\79_36.png" />
+    <Content Include="Amma Juzz\79_37.png" />
+    <Content Include="Amma Juzz\79_38.png" />
+    <Content Include="Amma Juzz\79_39.png" />
+    <Content Include="Amma Juzz\79_4.png" />
+    <Content Include="Amma Juzz\79_40.png" />
+    <Content Include="Amma Juzz\79_41.png" />
+    <Content Include="Amma Juzz\79_42.png" />
+    <Content Include="Amma Juzz\79_43.png" />
+    <Content Include="Amma Juzz\79_44.png" />
+    <Content Include="Amma Juzz\79_45.png" />
+    <Content Include="Amma Juzz\79_46.png" />
+    <Content Include="Amma Juzz\79_5.png" />
+    <Content Include="Amma Juzz\79_6.png" />
+    <Content Include="Amma Juzz\79_7.png" />
+    <Content Include="Amma Juzz\79_8.png" />
+    <Content Include="Amma Juzz\79_9.png" />
+    <Content Include="Amma Juzz\80_0.png" />
+    <Content Include="Amma Juzz\80_1.png" />
+    <Content Include="Amma Juzz\80_10.png" />
+    <Content Include="Amma Juzz\80_11.png" />
+    <Content Include="Amma Juzz\80_12.png" />
+    <Content Include="Amma Juzz\80_13.png" />
+    <Content Include="Amma Juzz\80_14.png" />
+    <Content Include="Amma Juzz\80_15.png" />
+    <Content Include="Amma Juzz\80_16.png" />
+    <Content Include="Amma Juzz\80_17.png" />
+    <Content Include="Amma Juzz\80_18.png" />
+    <Content Include="Amma Juzz\80_19.png" />
+    <Content Include="Amma Juzz\80_2.png" />
+    <Content Include="Amma Juzz\80_20.png" />
+    <Content Include="Amma Juzz\80_21.png" />
+    <Content Include="Amma Juzz\80_22.png" />
+    <Content Include="Amma Juzz\80_23.png" />
+    <Content Include="Amma Juzz\80_24.png" />
+    <Content Include="Amma Juzz\80_25.png" />
+    <Content Include="Amma Juzz\80_26.png" />
+    <Content Include="Amma Juzz\80_27.png" />
+    <Content Include="Amma Juzz\80_28.png" />
+    <Content Include="Amma Juzz\80_29.png" />
+    <Content Include="Amma Juzz\80_3.png" />
+    <Content Include="Amma Juzz\80_30.png" />
+    <Content Include="Amma Juzz\80_31.png" />
+    <Content Include="Amma Juzz\80_32.png" />
+    <Content Include="Amma Juzz\80_33.png" />
+    <Content Include="Amma Juzz\80_34.png" />
+    <Content Include="Amma Juzz\80_35.png" />
+    <Content Include="Amma Juzz\80_36.png" />
+    <Content Include="Amma Juzz\80_37.png" />
+    <Content Include="Amma Juzz\80_38.png" />
+    <Content Include="Amma Juzz\80_39.png" />
+    <Content Include="Amma Juzz\80_4.png" />
+    <Content Include="Amma Juzz\80_40.png" />
+    <Content Include="Amma Juzz\80_41.png" />
+    <Content Include="Amma Juzz\80_42.png" />
+    <Content Include="Amma Juzz\80_5.png" />
+    <Content Include="Amma Juzz\80_6.png" />
+    <Content Include="Amma Juzz\80_7.png" />
+    <Content Include="Amma Juzz\80_8.png" />
+    <Content Include="Amma Juzz\80_9.png" />
+    <Content Include="Amma Juzz\81_0.png" />
+    <Content Include="Amma Juzz\81_1.png" />
+    <Content Include="Amma Juzz\81_10.png" />
+    <Content Include="Amma Juzz\81_11.png" />
+    <Content Include="Amma Juzz\81_12.png" />
+    <Content Include="Amma Juzz\81_13.png" />
+    <Content Include="Amma Juzz\81_14.png" />
+    <Content Include="Amma Juzz\81_15.png" />
+    <Content Include="Amma Juzz\81_16.png" />
+    <Content Include="Amma Juzz\81_17.png" />
+    <Content Include="Amma Juzz\81_18.png" />
+    <Content Include="Amma Juzz\81_19.png" />
+    <Content Include="Amma Juzz\81_2.png" />
+    <Content Include="Amma Juzz\81_20.png" />
+    <Content Include="Amma Juzz\81_21.png" />
+    <Content Include="Amma Juzz\81_22.png" />
+    <Content Include="Amma Juzz\81_23.png" />
+    <Content Include="Amma Juzz\81_24.png" />
+    <Content Include="Amma Juzz\81_25.png" />
+    <Content Include="Amma Juzz\81_26.png" />
+    <Content Include="Amma Juzz\81_27.png" />
+    <Content Include="Amma Juzz\81_28.png" />
+    <Content Include="Amma Juzz\81_29.png" />
+    <Content Include="Amma Juzz\81_3.png" />
+    <Content Include="Amma Juzz\81_4.png" />
+    <Content Include="Amma Juzz\81_5.png" />
+    <Content Include="Amma Juzz\81_6.png" />
+    <Content Include="Amma Juzz\81_7.png" />
+    <Content Include="Amma Juzz\81_8.png" />
+    <Content Include="Amma Juzz\81_9.png" />
+    <Content Include="Amma Juzz\82_0.png" />
+    <Content Include="Amma Juzz\82_1.png" />
+    <Content Include="Amma Juzz\82_10.png" />
+    <Content Include="Amma Juzz\82_11.png" />
+    <Content Include="Amma Juzz\82_12.png" />
+    <Content Include="Amma Juzz\82_13.png" />
+    <Content Include="Amma Juzz\82_14.png" />
+    <Content Include="Amma Juzz\82_15.png" />
+    <Content Include="Amma Juzz\82_16.png" />
+    <Content Include="Amma Juzz\82_17.png" />
+    <Content Include="Amma Juzz\82_18.png" />
+    <Content Include="Amma Juzz\82_19.png" />
+    <Content Include="Amma Juzz\82_2.png" />
+    <Content Include="Amma Juzz\82_3.png" />
+    <Content Include="Amma Juzz\82_4.png" />
+    <Content Include="Amma Juzz\82_5.png" />
+    <Content Include="Amma Juzz\82_6.png" />
+    <Content Include="Amma Juzz\82_7.png" />
+    <Content Include="Amma Juzz\82_8.png" />
+    <Content Include="Amma Juzz\82_9.png" />
+    <Content Include="Amma Juzz\83_0.png" />
+    <Content Include="Amma Juzz\83_1.png" />
+    <Content Include="Amma Juzz\83_10.png" />
+    <Content Include="Amma Juzz\83_11.png" />
+    <Content Include="Amma Juzz\83_12.png" />
+    <Content Include="Amma Juzz\83_13.png" />
+    <Content Include="Amma Juzz\83_14.png" />
+    <Content Include="Amma Juzz\83_15.png" />
+    <Content Include="Amma Juzz\83_16.png" />
+    <Content Include="Amma Juzz\83_17.png" />
+    <Content Include="Amma Juzz\83_18.png" />
+    <Content Include="Amma Juzz\83_19.png" />
+    <Content Include="Amma Juzz\83_2.png" />
+    <Content Include="Amma Juzz\83_20.png" />
+    <Content Include="Amma Juzz\83_21.png" />
+    <Content Include="Amma Juzz\83_22.png" />
+    <Content Include="Amma Juzz\83_23.png" />
+    <Content Include="Amma Juzz\83_24.png" />
+    <Content Include="Amma Juzz\83_25.png" />
+    <Content Include="Amma Juzz\83_26.png" />
+    <Content Include="Amma Juzz\83_27.png" />
+    <Content Include="Amma Juzz\83_28.png" />
+    <Content Include="Amma Juzz\83_29.png" />
+    <Content Include="Amma Juzz\83_3.png" />
+    <Content Include="Amma Juzz\83_30.png" />
+    <Content Include="Amma Juzz\83_31.png" />
+    <Content Include="Amma Juzz\83_32.png" />
+    <Content Include="Amma Juzz\83_33.png" />
+    <Content Include="Amma Juzz\83_34.png" />
+    <Content Include="Amma Juzz\83_35.png" />
+    <Content Include="Amma Juzz\83_36.png" />
+    <Content Include="Amma Juzz\83_4.png" />
+    <Content Include="Amma Juzz\83_5.png" />
+    <Content Include="Amma Juzz\83_6.png" />
+    <Content Include="Amma Juzz\83_7.png" />
+    <Content Include="Amma Juzz\83_8.png" />
+    <Content Include="Amma Juzz\83_9.png" />
+    <Content Include="Amma Juzz\84_0.png" />
+    <Content Include="Amma Juzz\84_1.png" />
+    <Content Include="Amma Juzz\84_10.png" />
+    <Content Include="Amma Juzz\84_11.png" />
+    <Content Include="Amma Juzz\84_12.png" />
+    <Content Include="Amma Juzz\84_13.png" />
+    <Content Include="Amma Juzz\84_14.png" />
+    <Content Include="Amma Juzz\84_15.png" />
+    <Content Include="Amma Juzz\84_16.png" />
+    <Content Include="Amma Juzz\84_17.png" />
+    <Content Include="Amma Juzz\84_18.png" />
+    <Content Include="Amma Juzz\84_19.png" />
+    <Content Include="Amma Juzz\84_2.png" />
+    <Content Include="Amma Juzz\84_20.png" />
+    <Content Include="Amma Juzz\84_21.png" />
+    <Content Include="Amma Juzz\84_22.png" />
+    <Content Include="Amma Juzz\84_23.png" />
+    <Content Include="Amma Juzz\84_24.png" />
+    <Content Include="Amma Juzz\84_25.png" />
+    <Content Include="Amma Juzz\84_3.png" />
+    <Content Include="Amma Juzz\84_4.png" />
+    <Content Include="Amma Juzz\84_5.png" />
+    <Content Include="Amma Juzz\84_6.png" />
+    <Content Include="Amma Juzz\84_7.png" />
+    <Content Include="Amma Juzz\84_8.png" />
+    <Content Include="Amma Juzz\84_9.png" />
+    <Content Include="Amma Juzz\85_0.png" />
+    <Content Include="Amma Juzz\85_1.png" />
+    <Content Include="Amma Juzz\85_10.png" />
+    <Content Include="Amma Juzz\85_11.png" />
+    <Content Include="Amma Juzz\85_12.png" />
+    <Content Include="Amma Juzz\85_13.png" />
+    <Content Include="Amma Juzz\85_14.png" />
+    <Content Include="Amma Juzz\85_15.png" />
+    <Content Include="Amma Juzz\85_16.png" />
+    <Content Include="Amma Juzz\85_17.png" />
+    <Content Include="Amma Juzz\85_18.png" />
+    <Content Include="Amma Juzz\85_19.png" />
+    <Content Include="Amma Juzz\85_2.png" />
+    <Content Include="Amma Juzz\85_20.png" />
+    <Content Include="Amma Juzz\85_21.png" />
+    <Content Include="Amma Juzz\85_22.png" />
+    <Content Include="Amma Juzz\85_3.png" />
+    <Content Include="Amma Juzz\85_4.png" />
+    <Content Include="Amma Juzz\85_5.png" />
+    <Content Include="Amma Juzz\85_6.png" />
+    <Content Include="Amma Juzz\85_7.png" />
+    <Content Include="Amma Juzz\85_8.png" />
+    <Content Include="Amma Juzz\85_9.png" />
+    <Content Include="Amma Juzz\86_0.png" />
+    <Content Include="Amma Juzz\86_1.png" />
+    <Content Include="Amma Juzz\86_10.png" />
+    <Content Include="Amma Juzz\86_11.png" />
+    <Content Include="Amma Juzz\86_12.png" />
+    <Content Include="Amma Juzz\86_13.png" />
+    <Content Include="Amma Juzz\86_14.png" />
+    <Content Include="Amma Juzz\86_15.png" />
+    <Content Include="Amma Juzz\86_16.png" />
+    <Content Include="Amma Juzz\86_17.png" />
+    <Content Include="Amma Juzz\86_2.png" />
+    <Content Include="Amma Juzz\86_3.png" />
+    <Content Include="Amma Juzz\86_4.png" />
+    <Content Include="Amma Juzz\86_5.png" />
+    <Content Include="Amma Juzz\86_6.png" />
+    <Content Include="Amma Juzz\86_7.png" />
+    <Content Include="Amma Juzz\86_8.png" />
+    <Content Include="Amma Juzz\86_9.png" />
+    <Content Include="Amma Juzz\87_0.png" />
+    <Content Include="Amma Juzz\87_1.png" />
+    <Content Include="Amma Juzz\87_10.png" />
+    <Content Include="Amma Juzz\87_11.png" />
+    <Content Include="Amma Juzz\87_12.png" />
+    <Content Include="Amma Juzz\87_13.png" />
+    <Content Include="Amma Juzz\87_14.png" />
+    <Content Include="Amma Juzz\87_15.png" />
+    <Content Include="Amma Juzz\87_16.png" />
+    <Content Include="Amma Juzz\87_17.png" />
+    <Content Include="Amma Juzz\87_18.png" />
+    <Content Include="Amma Juzz\87_19.png" />
+    <Content Include="Amma Juzz\87_2.png" />
+    <Content Include="Amma Juzz\87_3.png" />
+    <Content Include="Amma Juzz\87_4.png" />
+    <Content Include="Amma Juzz\87_5.png" />
+    <Content Include="Amma Juzz\87_6.png" />
+    <Content Include="Amma Juzz\87_7.png" />
+    <Content Include="Amma Juzz\87_8.png" />
+    <Content Include="Amma Juzz\87_9.png" />
+    <Content Include="Amma Juzz\88_0.png" />
+    <Content Include="Amma Juzz\88_1.png" />
+    <Content Include="Amma Juzz\88_10.png" />
+    <Content Include="Amma Juzz\88_11.png" />
+    <Content Include="Amma Juzz\88_12.png" />
+    <Content Include="Amma Juzz\88_13.png" />
+    <Content Include="Amma Juzz\88_14.png" />
+    <Content Include="Amma Juzz\88_15.png" />
+    <Content Include="Amma Juzz\88_16.png" />
+    <Content Include="Amma Juzz\88_17.png" />
+    <Content Include="Amma Juzz\88_18.png" />
+    <Content Include="Amma Juzz\88_19.png" />
+    <Content Include="Amma Juzz\88_2.png" />
+    <Content Include="Amma Juzz\88_20.png" />
+    <Content Include="Amma Juzz\88_21.png" />
+    <Content Include="Amma Juzz\88_22.png" />
+    <Content Include="Amma Juzz\88_23.png" />
+    <Content Include="Amma Juzz\88_24.png" />
+    <Content Include="Amma Juzz\88_25.png" />
+    <Content Include="Amma Juzz\88_26.png" />
+    <Content Include="Amma Juzz\88_3.png" />
+    <Content Include="Amma Juzz\88_4.png" />
+    <Content Include="Amma Juzz\88_5.png" />
+    <Content Include="Amma Juzz\88_6.png" />
+    <Content Include="Amma Juzz\88_7.png" />
+    <Content Include="Amma Juzz\88_8.png" />
+    <Content Include="Amma Juzz\88_9.png" />
+    <Content Include="Amma Juzz\89_0.png" />
+    <Content Include="Amma Juzz\89_1.png" />
+    <Content Include="Amma Juzz\89_10.png" />
+    <Content Include="Amma Juzz\89_11.png" />
+    <Content Include="Amma Juzz\89_12.png" />
+    <Content Include="Amma Juzz\89_13.png" />
+    <Content Include="Amma Juzz\89_14.png" />
+    <Content Include="Amma Juzz\89_15.png" />
+    <Content Include="Amma Juzz\89_16.png" />
+    <Content Include="Amma Juzz\89_17.png" />
+    <Content Include="Amma Juzz\89_18.png" />
+    <Content Include="Amma Juzz\89_19.png" />
+    <Content Include="Amma Juzz\89_2.png" />
+    <Content Include="Amma Juzz\89_20.png" />
+    <Content Include="Amma Juzz\89_21.png" />
+    <Content Include="Amma Juzz\89_22.png" />
+    <Content Include="Amma Juzz\89_23.png" />
+    <Content Include="Amma Juzz\89_24.png" />
+    <Content Include="Amma Juzz\89_25.png" />
+    <Content Include="Amma Juzz\89_26.png" />
+    <Content Include="Amma Juzz\89_27.png" />
+    <Content Include="Amma Juzz\89_28.png" />
+    <Content Include="Amma Juzz\89_29.png" />
+    <Content Include="Amma Juzz\89_3.png" />
+    <Content Include="Amma Juzz\89_30.png" />
+    <Content Include="Amma Juzz\89_4.png" />
+    <Content Include="Amma Juzz\89_5.png" />
+    <Content Include="Amma Juzz\89_6.png" />
+    <Content Include="Amma Juzz\89_7.png" />
+    <Content Include="Amma Juzz\89_8.png" />
+    <Content Include="Amma Juzz\89_9.png" />
+    <Content Include="Amma Juzz\90_0.png" />
+    <Content Include="Amma Juzz\90_1.png" />
+    <Content Include="Amma Juzz\90_10.png" />
+    <Content Include="Amma Juzz\90_11.png" />
+    <Content Include="Amma Juzz\90_12.png" />
+    <Content Include="Amma Juzz\90_13.png" />
+    <Content Include="Amma Juzz\90_14.png" />
+    <Content Include="Amma Juzz\90_15.png" />
+    <Content Include="Amma Juzz\90_16.png" />
+    <Content Include="Amma Juzz\90_17.png" />
+    <Content Include="Amma Juzz\90_18.png" />
+    <Content Include="Amma Juzz\90_19.png" />
+    <Content Include="Amma Juzz\90_2.png" />
+    <Content Include="Amma Juzz\90_20.png" />
+    <Content Include="Amma Juzz\90_3.png" />
+    <Content Include="Amma Juzz\90_4.png" />
+    <Content Include="Amma Juzz\90_5.png" />
+    <Content Include="Amma Juzz\90_6.png" />
+    <Content Include="Amma Juzz\90_7.png" />
+    <Content Include="Amma Juzz\90_8.png" />
+    <Content Include="Amma Juzz\90_9.png" />
+    <Content Include="Amma Juzz\91_0.png" />
+    <Content Include="Amma Juzz\91_1.png" />
+    <Content Include="Amma Juzz\91_10.png" />
+    <Content Include="Amma Juzz\91_11.png" />
+    <Content Include="Amma Juzz\91_12.png" />
+    <Content Include="Amma Juzz\91_13.png" />
+    <Content Include="Amma Juzz\91_14.png" />
+    <Content Include="Amma Juzz\91_15.png" />
+    <Content Include="Amma Juzz\91_2.png" />
+    <Content Include="Amma Juzz\91_3.png" />
+    <Content Include="Amma Juzz\91_4.png" />
+    <Content Include="Amma Juzz\91_5.png" />
+    <Content Include="Amma Juzz\91_6.png" />
+    <Content Include="Amma Juzz\91_7.png" />
+    <Content Include="Amma Juzz\91_8.png" />
+    <Content Include="Amma Juzz\91_9.png" />
+    <Content Include="Amma Juzz\92_0.png" />
+    <Content Include="Amma Juzz\92_1.png" />
+    <Content Include="Amma Juzz\92_10.png" />
+    <Content Include="Amma Juzz\92_11.png" />
+    <Content Include="Amma Juzz\92_12.png" />
+    <Content Include="Amma Juzz\92_13.png" />
+    <Content Include="Amma Juzz\92_14.png" />
+    <Content Include="Amma Juzz\92_15.png" />
+    <Content Include="Amma Juzz\92_16.png" />
+    <Content Include="Amma Juzz\92_17.png" />
+    <Content Include="Amma Juzz\92_18.png" />
+    <Content Include="Amma Juzz\92_19.png" />
+    <Content Include="Amma Juzz\92_2.png" />
+    <Content Include="Amma Juzz\92_20.png" />
+    <Content Include="Amma Juzz\92_21.png" />
+    <Content Include="Amma Juzz\92_3.png" />
+    <Content Include="Amma Juzz\92_4.png" />
+    <Content Include="Amma Juzz\92_5.png" />
+    <Content Include="Amma Juzz\92_6.png" />
+    <Content Include="Amma Juzz\92_7.png" />
+    <Content Include="Amma Juzz\92_8.png" />
+    <Content Include="Amma Juzz\92_9.png" />
+    <Content Include="Amma Juzz\93_0.png" />
+    <Content Include="Amma Juzz\93_1.png" />
+    <Content Include="Amma Juzz\93_10.png" />
+    <Content Include="Amma Juzz\93_11.png" />
+    <Content Include="Amma Juzz\93_2.png" />
+    <Content Include="Amma Juzz\93_3.png" />
+    <Content Include="Amma Juzz\93_4.png" />
+    <Content Include="Amma Juzz\93_5.png" />
+    <Content Include="Amma Juzz\93_6.png" />
+    <Content Include="Amma Juzz\93_7.png" />
+    <Content Include="Amma Juzz\93_8.png" />
+    <Content Include="Amma Juzz\93_9.png" />
+    <Content Include="Amma Juzz\94_0.png" />
+    <Content Include="Amma Juzz\94_1.png" />
+    <Content Include="Amma Juzz\94_2.png" />
+    <Content Include="Amma Juzz\94_3.png" />
+    <Content Include="Amma Juzz\94_4.png" />
+    <Content Include="Amma Juzz\94_5.png" />
+    <Content Include="Amma Juzz\94_6.png" />
+    <Content Include="Amma Juzz\94_7.png" />
+    <Content Include="Amma Juzz\94_8.png" />
+    <Content Include="Amma Juzz\95_0.png" />
+    <Content Include="Amma Juzz\95_1.png" />
+    <Content Include="Amma Juzz\95_2.png" />
+    <Content Include="Amma Juzz\95_3.png" />
+    <Content Include="Amma Juzz\95_4.png" />
+    <Content Include="Amma Juzz\95_5.png" />
+    <Content Include="Amma Juzz\95_6.png" />
+    <Content Include="Amma Juzz\95_7.png" />
+    <Content Include="Amma Juzz\95_8.png" />
+    <Content Include="Amma Juzz\96_0.png" />
+    <Content Include="Amma Juzz\96_1.png" />
+    <Content Include="Amma Juzz\96_10.png" />
+    <Content Include="Amma Juzz\96_11.png" />
+    <Content Include="Amma Juzz\96_12.png" />
+    <Content Include="Amma Juzz\96_13.png" />
+    <Content Include="Amma Juzz\96_14.png" />
+    <Content Include="Amma Juzz\96_15.png" />
+    <Content Include="Amma Juzz\96_16.png" />
+    <Content Include="Amma Juzz\96_17.png" />
+    <Content Include="Amma Juzz\96_18.png" />
+    <Content Include="Amma Juzz\96_19.png" />
+    <Content Include="Amma Juzz\96_2.png" />
+    <Content Include="Amma Juzz\96_3.png" />
+    <Content Include="Amma Juzz\96_4.png" />
+    <Content Include="Amma Juzz\96_5.png" />
+    <Content Include="Amma Juzz\96_6.png" />
+    <Content Include="Amma Juzz\96_7.png" />
+    <Content Include="Amma Juzz\96_8.png" />
+    <Content Include="Amma Juzz\96_9.png" />
+    <Content Include="Amma Juzz\97_0.png" />
+    <Content Include="Amma Juzz\97_1.png" />
+    <Content Include="Amma Juzz\97_2.png" />
+    <Content Include="Amma Juzz\97_3.png" />
+    <Content Include="Amma Juzz\97_4.png" />
+    <Content Include="Amma Juzz\97_5.png" />
+    <Content Include="Amma Juzz\98_0.png" />
+    <Content Include="Amma Juzz\98_1.png" />
+    <Content Include="Amma Juzz\98_2.png" />
+    <Content Include="Amma Juzz\98_3.png" />
+    <Content Include="Amma Juzz\98_4.png" />
+    <Content Include="Amma Juzz\98_5.png" />
+    <Content Include="Amma Juzz\98_6.png" />
+    <Content Include="Amma Juzz\98_7.png" />
+    <Content Include="Amma Juzz\98_8.png" />
+    <Content Include="Amma Juzz\99_0.png" />
+    <Content Include="Amma Juzz\99_1.png" />
+    <Content Include="Amma Juzz\99_2.png" />
+    <Content Include="Amma Juzz\99_3.png" />
+    <Content Include="Amma Juzz\99_4.png" />
+    <Content Include="Amma Juzz\99_5.png" />
+    <Content Include="Amma Juzz\99_6.png" />
+    <Content Include="Amma Juzz\99_7.png" />
+    <Content Include="Amma Juzz\99_8.png" />
+    <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Areas\HelpPage\Views\Web.config" />
+    <Content Include="Areas\HelpPage\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Index.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\TextSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Samples.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\Parameters.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\InvalidSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ImageSample.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
+    <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\respond.js" />
+    <Content Include="Scripts\respond.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Areas\HelpPage\Views\_ViewStart.cshtml" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="packages.config" />
+    <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1771</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1771/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

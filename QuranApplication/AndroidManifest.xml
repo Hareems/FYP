@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.quranapplication"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_copy"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.quranapplication.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+    
+        
+        
+        <!-- Registeration -->
+        <activity
+            android:name="com.example.quranapplication.Registeration"
+            android:label="Registeration" >
+        </activity>
+        
+
+         <!-- Forget Password -->
+        <activity
+            android:name="com.example.quranapplication.Forget_pwd"
+            android:label="Forget Password" >
+        </activity>
+        <!-- Edit_profile -->
+        <activity
+            android:name="com.example.quranapplication.Profile"
+            android:label="Edit_Profile" >
+        </activity>
+        <!-- profile -->
+        <activity
+            android:name="com.example.quranapplication.TestProfile"
+            android:label="Profile" >
+        </activity>
+        <!-- About -->
+        <activity
+            android:name="com.example.quranapplication.About"
+            android:label=" About" >
+        </activity>
+        <!-- Bookmarks -->
+        <activity
+            android:name="com.example.quranapplication.Bookmarks"
+            android:label=" Bookmarks" >
+        </activity>
+        <!-- Message -->
+        <activity
+            android:name="com.example.quranapplication.Message"
+            android:label="Message" >
+        </activity>
+        <!-- Compose Message -->
+        <activity
+            android:name="com.example.quranapplication.Compose"
+            android:label="Compose Message" >
+        </activity>
+        <!-- Inbox Activity -->
+        <activity
+            android:name=".Inbox"
+            android:label="Inbox" />
+
+        <!-- Outbox Activity -->
+        <activity
+            android:name=".Outbox"
+            android:label="Outbox" >
+        </activity>
+        <!-- Juzz -->
+        <activity
+            android:name="com.example.quranapplication.Juzz"
+            android:label="Juzz" >
+        </activity>
+        <!-- Notification -->
+        <activity
+            android:name="com.example.quranapplication.Notification"
+            android:label="Notification" >
+        </activity>
+        <!-- Quari -->
+        <activity
+            android:name="com.example.quranapplication.Quari"
+            android:label="Find Quari" >
+        </activity>
+        <!-- Search Results -->
+        <activity
+            android:name="com.example.quranapplication.Search_Result_activity"
+            android:label=" Search Results" >
+        </activity>
+        <!-- settings -->
+        <activity
+            android:name="com.example.quranapplication.Settings"
+            android:label="Settings" >
+        </activity>
+        
+         <!--Password settings -->
+        <activity
+            android:name="com.example.quranapplication.PasswordSetting"
+            android:label=" Password Setting" >
+        </activity>
+        <!-- Surah Receiter Tab -->
+        <activity
+            android:name="com.example.quranapplication.Surah_Receiter"
+            android:label="Surah receiter tab" >
+        </activity>
+        <!-- Student Dashboard Design Activity -->
+        <activity
+            android:name="com.example.quranapplication.StudentDashboardDesignActivity"
+            android:label="Home" >
+        </activity>
+
+        <!-- Surah -->
+        <activity
+            android:name="com.example.quranapplication.Surah"
+            android:label="Surah" >
+        </activity>
+        <!-- receiter -->
+        <activity
+            android:name="com.example.quranapplication.Receiter"
+            android:label="Receiter" >
+        </activity>
+    </application>
+    <!-- Internet Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+</manifest>

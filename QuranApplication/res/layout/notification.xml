@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+      android:background="#EFEFEF" >
+        <TextView
+        android:id="@+id/notificationmas"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="45dp"
+        android:text="Notification list"
+        android:textSize="20sp"
+        android:textStyle="italic"
+         />
+      
+
+</LinearLayout>
