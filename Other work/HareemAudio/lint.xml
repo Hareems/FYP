@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="ContentDescription">
+        <ignore path="res/layout/activity_main.xml" />
+        <ignore path="res/layout/imagetest.xml" />
+        <ignore path="res/layout/main.xml" />
+        <ignore path="res/layout/recording.xml" />
+        <ignore path="res/layout/spinner.xml" />
+        <ignore path="res/layout/spinners.xml" />
+    </issue>
+    <issue id="HardcodedText">
+        <ignore path="res/layout/activity_main.xml" />
+        <ignore path="res/layout/imagetest.xml" />
+        <ignore path="res/layout/main.xml" />
+        <ignore path="res/layout/recording.xml" />
+        <ignore path="res/layout/spinner.xml" />
+        <ignore path="res/layout/spinners.xml" />
+    </issue>
+    <issue id="InefficientWeight">
+        <ignore path="res/layout/main.xml" />
+        <ignore path="res/layout/spinner.xml" />
+        <ignore path="res/layout/spinners.xml" />
+    </issue>
+    <issue id="ObsoleteLayoutParam">
+        <ignore path="res/layout/activity_main.xml" />
+        <ignore path="res/layout/main.xml" />
+    </issue>
+    <issue id="PxUsage">
+        <ignore path="res/layout/activity_main.xml" />
+        <ignore path="res/layout/imagetest.xml" />
+    </issue>
+    <issue id="SpUsage">
+        <ignore path="res/layout/main.xml" />
+        <ignore path="res/layout/spinner.xml" />
+    </issue>
+    <issue id="UselessParent">
+        <ignore path="res/layout/main.xml" />
+        <ignore path="res/layout/spinner.xml" />
+    </issue>
+</lint>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <!-- Player Header -->
+
+    <LinearLayout
+        android:id="@+id/player_header_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentTop="true"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <!-- Audio Title -->
+
+        <TextView
+            android:id="@+id/audioTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:paddingLeft="10dp"
+            android:text="1"
+            android:textColor="#04b3d2"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <!-- Playlist button -->
+
+        <ImageButton
+            android:id="@+id/btnPlaylist"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="@null"
+            android:src="@drawable/btn_playlist" />
+    </LinearLayout>
+
+    <!-- Sabak  Image -->
+
+    <LinearLayout
+        android:id="@+id/AudioThumbnail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="50dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="240dp"
+            android:src="@drawable/fatiha" />
+    </LinearLayout>
+
+    <!-- Player Footer -->
+
+    <LinearLayout
+        android:id="@+id/player_footer_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center" >
+
+      
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp" >
+
+            <!-- for spinner 1-->
+<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:orientation="vertical" >
+   
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0.50"
+            android:textColor="#04b3d2"
+            android:text="Ayat To:" />
+    </LinearLayout>
+           
+			<!-- for spinner2 -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0.40"
+            android:textColor="#04b3d2"
+            android:text="@string/ayat_from_" />
+
+    </LinearLayout>
+   			
+   			<!-- for spinner 3-->
+   			
+       <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <Spinner
+            android:id="@+id/spinner3"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0.40"
+           android:textColor="#04b3d2"
+            android:text="@string/repeat_"
+    />
+
+    </LinearLayout>
+    
+    <!-- Adding new spinner here -->
+    
+       <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <Spinner
+            android:id="@+id/spinner4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+             />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="0.40"
+           android:textColor="#04b3d2"
+            android:text="Surah"
+    />
+
+    </LinearLayout>
+    
+           <!-- For button -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:gravity="right"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:paddingLeft="10dp"
+            android:onClick="sendMessage"
+            android:text="@string/ok" />
+    </LinearLayout>
+    
+            
+        </LinearLayout>
+    </LinearLayout>
+
+ 
+    
+
+</RelativeLayout>

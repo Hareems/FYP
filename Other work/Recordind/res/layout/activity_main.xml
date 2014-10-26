@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".MainActivity" >
+
+   <TextView
+      	android:id="@+id/text1"
+      	android:layout_width="wrap_content"
+      	android:layout_height="wrap_content"
+      	android:layout_marginTop="10dp"
+      	android:text="Recording Point: -"
+      	android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+   <LinearLayout  android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+   		android:layout_marginTop="10dp"
+   		android:layout_below="@+id/micImage"
+   		android:id="@+id/linear1"
+   		android:orientation="horizontal" >
+   
+   </LinearLayout>
+   
+   <LinearLayout  android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+   		android:layout_marginTop="10dp"
+   		android:layout_below="@+id/linear1"
+   		android:id="@+id/linear2"
+   		android:orientation="horizontal" >
+
+	</LinearLayout>
+
+   <ImageView
+       android:id="@+id/micImage"
+       android:layout_width="120dp"
+       android:layout_height="120dp"
+       android:layout_below="@+id/text1"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="78dp"
+       android:src="@android:drawable/presence_audio_online" />
+
+   <Button
+       android:id="@+id/play"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/stopPlay"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentRight="true"
+       android:enabled="false"
+       android:text="play" />
+
+   <Button
+       android:id="@+id/stop"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBaseline="@+id/start"
+       android:layout_alignBottom="@+id/start"
+       android:layout_marginLeft="15dp"
+       android:layout_toRightOf="@+id/micImage"
+       android:enabled="false"
+       android:text="stop" />
+
+   <Button
+       android:id="@+id/start"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentLeft="true"
+       android:layout_below="@+id/micImage"
+       android:layout_marginLeft="16dp"
+       android:text="start" />
+
+   <Button
+       android:id="@+id/button1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentRight="true"
+        android:enabled="false"
+       android:text="Send" />
+
+   <Button
+       android:id="@+id/stopPlay"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_above="@+id/button1"
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentRight="true"
+       android:enabled="false"
+       android:text="stop playing" />
+
+</RelativeLayout>
